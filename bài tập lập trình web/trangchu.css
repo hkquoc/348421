@@ -1,0 +1,653 @@
+/* General Resets and Body Styles */
+body {
+    font-family: 'Roboto', 'Times New Roman', Times, serif,; /* Using Roboto as a common clean font */
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Light grey background */
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden; /* Prevent horizontal scroll from elements */
+    /* Add vendor prefixes for modern CSS features if needed, though most are widely supported */
+}
+
+.container {
+    max-width: 1100px; /* Adjusted to be slightly narrower to match CGV's layout */
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* --- Top Bar Promo --- */
+.top-bar-promo {
+    background-color: #fff; /* White background for top bar */
+    border-bottom: 1px solid #eee;
+    padding: 8px 0;
+    font-size: 13px;
+}
+
+.top-bar-promo .container {
+    display: -webkit-box; /* For older WebKit browsers */
+    display: -ms-flexbox; /* For IE 10+ */
+    display: flex;
+    -webkit-box-pack: justify; /* For older WebKit browsers */
+    -ms-flex-pack: justify; /* For IE 10+ */
+    justify-content: space-between;
+    -webkit-box-align: center; /* For older WebKit browsers */
+    -ms-flex-align: center; /* For IE 10+ */
+    align-items: center;
+}
+
+.techcombank-ad img {
+    height: 30px; /* Adjust height for the small banner */
+    width: auto;
+    display: block;
+}
+
+.login-lang {
+    display: -webkit-box; /* For older WebKit browsers */
+    display: -ms-flexbox; /* For IE 10+ */
+    display: flex;
+    gap: 20px; /* Gap is relatively new, fallback might be needed for very old browsers (margin-right on spans) */
+    color: #666;
+}
+
+.login-lang span {
+    display: -webkit-box; /* For older WebKit browsers */
+    display: -ms-flexbox; /* For IE 10+ */
+    display: flex;
+    -webkit-box-align: center; /* For older WebKit browsers */
+    -ms-flex-align: center; /* For IE 10+ */
+    align-items: center;
+    cursor: pointer;
+    -webkit-transition: color 0.2s ease; /* WebKit */
+    -moz-transition: color 0.2s ease; /* Mozilla */
+    -ms-transition: color 0.2s ease; /* IE */
+    -o-transition: color 0.2s ease; /* Opera */
+    transition: color 0.2s ease;
+}
+
+.login-lang span:hover {
+    color: #e62429; /* CGV Red */
+}
+
+.login-lang span i {
+    margin-right: 5px;
+    font-size: 14px;
+}
+
+/* --- Header - Main Navigation --- */
+.main-header {
+    background-color: #262626; /* Dark grey/black for header */
+    padding: 10px 0;
+    -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* WebKit */
+    -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Mozilla */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.main-header .container {
+    display: -webkit-box; /* For older WebKit browsers */
+    display: -ms-flexbox; /* For IE 10+ */
+    display: flex;
+    -webkit-box-pack: justify; /* For older WebKit browsers */
+    -ms-flex-pack: justify; /* For IE 10+ */
+    justify-content: space-between;
+    -webkit-box-align: center; /* For older WebKit browsers */
+    -ms-flex-align: center; /* For IE 10+ */
+    align-items: center;
+}
+
+.header-left {
+    display: -webkit-box; /* For older WebKit browsers */
+    display: -ms-flexbox; /* For IE 10+ */
+    display: flex;
+    -webkit-box-align: center; /* For older WebKit browsers */
+    -ms-flex-align: center; /* For IE 10+ */
+    align-items: center;
+}
+
+.cgv-logo img {
+    height: 45px; /* Adjust as per actual logo size */
+    width: auto;
+    margin-right: 30px;
+}
+
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: -webkit-box; /* For older WebKit browsers */
+    display: -ms-flexbox; /* For IE 10+ */
+    display: flex;
+}
+
+.main-nav ul li {
+    margin-right: 35px; /* Spacing between main nav items */
+}
+
+.main-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 0;
+    -webkit-transition: color 0.2s ease; /* WebKit */
+    -moz-transition: color 0.2s ease; /* Mozilla */
+    -ms-transition: color 0.2s ease; /* IE */
+    -o-transition: color 0.2s ease; /* Opera */
+    transition: color 0.2s ease;
+    text-transform: uppercase;
+}
+
+.main-nav ul li a:hover {
+    color: #e62429; /* CGV Red for hover */
+}
+
+.btn-buy-ticket {
+    background-color: #e62429; /* CGV Red button */
+    color: #fff;
+    padding: 8px 20px;
+    -webkit-border-radius: 5px; /* WebKit */
+    -moz-border-radius: 5px; /* Mozilla */
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    display: -webkit-box; /* For older WebKit browsers */
+    display: -ms-flexbox; /* For IE 10+ */
+    display: flex;
+    -webkit-box-align: center; /* For older WebKit browsers */
+    -ms-flex-align: center; /* For IE 10+ */
+    align-items: center;
+    -webkit-transition: background-color 0.2s ease; /* WebKit */
+    -moz-transition: background-color 0.2s ease; /* Mozilla */
+    -ms-transition: background-color 0.2s ease; /* IE */
+    -o-transition: background-color 0.2s ease; /* Opera */
+    transition: background-color 0.2s ease;
+}
+
+.btn-buy-ticket img {
+    height: 20px; /* Icon size */
+    margin-right: 8px;
+}
+
+.btn-buy-ticket:hover {
+    background-color: #c91f24;
+}
+
+/* --- Sub Navigation Bar --- */
+.sub-nav {
+    background-color: #1a1a1a; /* Darker background for sub-nav */
+    padding: 15px 0;
+    -webkit-box-shadow: inset 0 -2px 5px rgba(0, 0, 0, 0.3); /* WebKit */
+    -moz-box-shadow: inset 0 -2px 5px rgba(0, 0, 0, 0.3); /* Mozilla */
+    box-shadow: inset 0 -2px 5px rgba(0, 0, 0, 0.3); /* Inner shadow for depth */
+}
+
+.sub-nav .container ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: -webkit-box; /* For older WebKit browsers */
+    display: -ms-flexbox; /* For IE 10+ */
+    display: flex;
+    -webkit-box-pack: space-around; /* For older WebKit browsers */
+    -ms-flex-pack: space-around; /* For IE 10+ */
+    justify-content: space-around; /* Distribute items evenly */
+    text-align: center;
+}
+
+.sub-nav ul li a {
+    color: #aaa;
+    text-decoration: none;
+    font-size: 13px;
+    -webkit-transition: color 0.2s ease; /* WebKit */
+    -moz-transition: color 0.2s ease; /* Mozilla */
+    -ms-transition: color 0.2s ease; /* IE */
+    -o-transition: color 0.2s ease; /* Opera */
+    transition: color 0.2s ease;
+}
+
+.sub-nav ul li a img {
+    display: block;
+    width: 35px; /* Size for sub-nav icons */
+    height: 35px;
+    margin: 0 auto 5px; /* Center icon and add space below */
+}
+
+.sub-nav ul li a:hover {
+    color: #fff;
+}
+
+/* --- Main Banner / Slider --- */
+.main-banner-section {
+    padding: 20px 0;
+    background-color: #f0f0f0; /* Light background for banner area */
+}
+
+.banner-wrapper {
+    position: relative;
+    text-align: center;
+}
+
+.banner-wrapper img {
+    max-width: 100%;
+    height: auto;
+    -webkit-border-radius: 8px; /* WebKit */
+    -moz-border-radius: 8px; /* Mozilla */
+    border-radius: 8px;
+    -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* WebKit */
+    -moz-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Mozilla */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.slider-dots {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    -webkit-transform: translateX(-50%); /* WebKit */
+    -moz-transform: translateX(-50%); /* Mozilla */
+    -ms-transform: translateX(-50%); /* IE 9+ */
+    -o-transform: translateX(-50%); /* Opera */
+    transform: translateX(-50%);
+    display: -webkit-box; /* For older WebKit browsers */
+    display: -ms-flexbox; /* For IE 10+ */
+    display: flex;
+    gap: 8px;
+}
+
+.slider-dots .dot {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    -webkit-border-radius: 50%; /* WebKit */
+    -moz-border-radius: 50%; /* Mozilla */
+    border-radius: 50%;
+    cursor: pointer;
+    -webkit-transition: background-color 0.2s ease; /* WebKit */
+    -moz-transition: background-color 0.2s ease; /* Mozilla */
+    -ms-transition: background-color 0.2s ease; /* IE */
+    -o-transition: background-color 0.2s ease; /* Opera */
+    transition: background-color 0.2s ease;
+}
+
+.slider-dots .dot.active,
+.slider-dots .dot:hover {
+    background-color: #e62429;
+}
+
+/* --- Movie Selection Title --- */
+.movie-selection-title {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.movie-selection-title h2 img {
+    max-width: 250px; /* Adjust size of the title image */
+    height: auto;
+}
+
+/* --- Movie Grid Section --- */
+.movie-grid-section {
+    padding: 30px 0 60px;
+}
+
+.movie-grid-nav {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.grid-nav-btn {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: #999;
+    padding: 10px 20px;
+    cursor: pointer;
+    -webkit-transition: color 0.2s ease; /* WebKit */
+    -moz-transition: color 0.2s ease; /* Mozilla */
+    -ms-transition: color 0.2s ease; /* IE */
+    -o-transition: color 0.2s ease; /* Opera */
+    transition: color 0.2s ease;
+}
+
+.grid-nav-btn:hover,
+.grid-nav-btn.active {
+    color: #e62429;
+    border-bottom: 3px solid #e62429;
+}
+
+.movie-list-wrapper {
+    position: relative;
+    display: -webkit-box; /* For older WebKit browsers */
+    display: -ms-flexbox; /* For IE 10+ */
+    display: flex;
+    -webkit-box-align: center; /* For older WebKit browsers */
+    -ms-flex-align: center; /* For IE 10+ */
+    align-items: center;
+    -webkit-box-pack: center; /* For older WebKit browsers */
+    -ms-flex-pack: center; /* For IE 10+ */
+    justify-content: center; /* Center the movie list */
+}
+
+.movie-list {
+    display: -webkit-box; /* For older WebKit browsers */
+    display: -ms-flexbox; /* For IE 10+ */
+    display: flex;
+    gap: 20px; /* Spacing between movie cards */
+    overflow-x: auto; /* Enable horizontal scrolling for more movies */
+    padding-bottom: 15px; /* Space for scrollbar */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+    -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
+}
+
+.movie-list::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome, Safari, Opera */
+}
+
+.movie-card {
+    -webkit-box-flex: 0; /* For older WebKit browsers */
+    -ms-flex: 0 0 auto; /* For IE 10+ */
+    flex: 0 0 auto; /* Do not grow, do not shrink, fixed basis */
+    width: 200px; /* Fixed width for movie cards */
+    background-color: #fff;
+    -webkit-border-radius: 8px; /* WebKit */
+    -moz-border-radius: 8px; /* Mozilla */
+    border-radius: 8px;
+    -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); /* WebKit */
+    -moz-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); /* Mozilla */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    text-align: left;
+    -webkit-transition: -webkit-transform 0.2s ease; /* WebKit */
+    -moz-transition: -moz-transform 0.2s ease; /* Mozilla */
+    -ms-transition: -ms-transform 0.2s ease; /* IE */
+    -o-transition: -o-transform 0.2s ease; /* Opera */
+    transition: transform 0.2s ease;
+}
+
+.movie-card:hover {
+    -webkit-transform: translateY(-5px); /* WebKit */
+    -moz-transform: translateY(-5px); /* Mozilla */
+    -ms-transform: translateY(-5px); /* IE 9+ */
+    -o-transform: translateY(-5px); /* Opera */
+    transform: translateY(-5px);
+}
+
+.movie-card img {
+    width: 100%;
+    height: 280px; /* Fixed height for posters */
+    object-fit: cover;
+    display: block;
+}
+
+.rating-tag {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #e62429; /* Red for T18/T16 */
+    color: #fff;
+    padding: 4px 8px;
+    -webkit-border-radius: 3px; /* WebKit */
+    -moz-border-radius: 3px; /* Mozilla */
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.rating-tag.green {
+    background-color: #008000; /* Green for K */
+}
+
+.movie-info {
+    padding: 15px;
+}
+
+.movie-info h4 {
+    font-size: 18px;
+    margin: 0 0 5px;
+    color: #222;
+    height: 45px; /* Fixed height to prevent layout shifts */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box; /* Required for -webkit-line-clamp */
+    -webkit-line-clamp: 2; /* Limit to 2 lines */
+    line-clamp: 2; /* Standard property for compatibility */
+    -webkit-box-orient: vertical; /* Required for -webkit-line-clamp */
+}
+
+.movie-info .genre {
+    font-size: 13px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.btn-book-now {
+    background-color: #e62429;
+    color: #fff;
+    padding: 8px 15px;
+    -webkit-border-radius: 5px; /* WebKit */
+    -moz-border-radius: 5px; /* Mozilla */
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    display: block; /* Make button full width */
+    text-align: center;
+    -webkit-transition: background-color 0.2s ease; /* WebKit */
+    -moz-transition: background-color 0.2s ease; /* Mozilla */
+    -ms-transition: background-color 0.2s ease; /* IE */
+    -o-transition: background-color 0.2s ease; /* Opera */
+    transition: background-color 0.2s ease;
+}
+
+.btn-book-now:hover {
+    background-color: #c91f24;
+}
+
+.arrow-btn {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    -webkit-border-radius: 50%; /* WebKit */
+    -moz-border-radius: 50%; /* Mozilla */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: -webkit-box; /* For older WebKit browsers */
+    display: -ms-flexbox; /* For IE 10+ */
+    display: flex;
+    -webkit-box-align: center; /* For older WebKit browsers */
+    -ms-flex-align: center; /* For IE 10+ */
+    align-items: center;
+    -webkit-box-pack: center; /* For older WebKit browsers */
+    -ms-flex-pack: center; /* For IE 10+ */
+    justify-content: center;
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 10;
+    -webkit-transition: background-color 0.2s ease; /* WebKit */
+    -moz-transition: background-color 0.2s ease; /* Mozilla */
+    -ms-transition: background-color 0.2s ease; /* IE */
+    -o-transition: background-color 0.2s ease; /* Opera */
+    transition: background-color 0.2s ease;
+}
+
+.arrow-btn:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.left-arrow {
+    left: 0;
+    -webkit-transform: translateX(-50%); /* WebKit */
+    -moz-transform: translateX(-50%); /* Mozilla */
+    -ms-transform: translateX(-50%); /* IE 9+ */
+    -o-transform: translateX(-50%); /* Opera */
+    transform: translateX(-50%); /* Half out of view */
+}
+
+.right-arrow {
+    right: 0;
+    -webkit-transform: translateX(50%); /* WebKit */
+    -moz-transform: translateX(50%); /* Mozilla */
+    -ms-transform: translateX(50%); /* IE 9+ */
+    -o-transform: translateX(50%); /* Opera */
+    transform: translateX(50%); /* Half out of view */
+}
+
+/* --- Footer --- */
+.cgv-footer {
+    background-color: #1a1a1a;
+    color: #aaa;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 13px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1150px) {
+    .left-arrow { left: 15px; -webkit-transform: translateX(0); -moz-transform: translateX(0); -ms-transform: translateX(0); -o-transform: translateX(0); transform: translateX(0); } /* Keep arrows inside container */
+    .right-arrow { right: 15px; -webkit-transform: translateX(0); -moz-transform: translateX(0); -ms-transform: translateX(0); -o-transform: translateX(0); transform: translateX(0); }
+}
+
+@media (max-width: 992px) {
+    .main-nav ul li {
+        margin-right: 20px;
+    }
+    .cgv-logo img {
+        margin-right: 15px;
+    }
+    .sub-nav ul li a {
+        font-size: 11px;
+    }
+    .sub-nav ul li a img {
+        width: 30px;
+        height: 30px;
+    }
+    .movie-list-wrapper {
+        -webkit-box-pack: start; /* For older WebKit browsers */
+        -ms-flex-pack: start; /* For IE 10+ */
+        justify-content: flex-start; /* For small screens, allow full scroll */
+    }
+    .arrow-btn {
+        display: none; /* Hide arrows on small screens, rely on scroll */
+    }
+}
+
+@media (max-width: 768px) {
+    .top-bar-promo .container,
+    .main-header .container,
+    .sub-nav .container ul {
+        -webkit-box-orient: vertical; /* For older WebKit browsers */
+        -webkit-box-direction: normal; /* For older WebKit browsers */
+        -ms-flex-direction: column; /* For IE 10+ */
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .login-lang {
+        margin-top: 10px;
+        -ms-flex-wrap: wrap; /* For IE 10+ */
+        flex-wrap: wrap;
+        -webkit-box-pack: center; /* For older WebKit browsers */
+        -ms-flex-pack: center; /* For IE 10+ */
+        justify-content: center;
+    }
+
+    .main-nav ul {
+        margin-top: 15px;
+    }
+
+    .main-nav ul li {
+        margin: 10px 0;
+    }
+
+    .header-left {
+        -webkit-box-orient: vertical; /* For older WebKit browsers */
+        -webkit-box-direction: normal; /* For older WebKit browsers */
+        -ms-flex-direction: column; /* For IE 10+ */
+        flex-direction: column;
+    }
+
+    .cgv-logo img {
+        margin-bottom: 15px;
+        margin-right: 0;
+    }
+
+    .btn-buy-ticket {
+        margin-top: 15px;
+    }
+
+    .sub-nav ul li {
+        margin-bottom: 10px;
+    }
+
+    .movie-list {
+        -webkit-box-pack: start; /* For older WebKit browsers */
+        -ms-flex-pack: start; /* For IE 10+ */
+        justify-content: flex-start; /* Ensure scroll works on small screens */
+    }
+    .movie-card {
+        width: 180px; /* Slightly smaller cards on mobile */
+    }
+    .movie-card img {
+        height: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .techcombank-ad img {
+        height: 25px;
+    }
+    .login-lang span {
+        font-size: 11px;
+    }
+    .main-header {
+        padding: 8px 0;
+    }
+    .cgv-logo img {
+        height: 40px;
+    }
+    .main-nav ul li a {
+        font-size: 14px;
+    }
+    .btn-buy-ticket {
+        font-size: 13px;
+        padding: 6px 15px;
+    }
+    .sub-nav {
+        padding: 10px 0;
+    }
+    .sub-nav ul li a {
+        font-size: 10px;
+    }
+    .sub-nav ul li a img {
+        width: 25px;
+        height: 25px;
+    }
+    .movie-selection-title h2 img {
+        max-width: 200px;
+    }
+    .grid-nav-btn {
+        font-size: 16px;
+    }
+    .movie-card {
+        width: 150px; /* Smallest card size */
+    }
+    .movie-card img {
+        height: 200px;
+    }
+    .movie-info h4 {
+        font-size: 16px;
+        height: 40px;
+    }
+    .movie-info .genre {
+        font-size: 12px;
+    }
+    .btn-book-now {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+}
