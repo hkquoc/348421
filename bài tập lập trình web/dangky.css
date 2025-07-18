@@ -127,7 +127,7 @@
         }
 
         .form-group input:focus {
-            border-color: #18cd11;
+            border-color: #f40c0c;
         }
 
         .form-group input::placeholder {
@@ -150,7 +150,7 @@
         }
 
         .signup-button:hover {
-            background-color: #11e306;
+            background-color: #0960ed;
         }
 
         .login-link {
@@ -160,14 +160,14 @@
         }
 
         .login-link a {
-            color: #e50914;
+            color: #f4033f;
             text-decoration: none;
             font-weight: bold;
         }
 
         .login-link a:hover {
             text-decoration:  underline solid 2px;
-            color: #80ec0c;
+            color: #100cec;
         }
 
         .social-signup {
@@ -198,7 +198,7 @@
         }
 
         .social-buttons button.google {
-            background-color: #DB4437; /* Google red */
+            background-color: #c80000; /* Google red */
         }
 
         .social-buttons button.facebook {

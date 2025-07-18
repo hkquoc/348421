@@ -79,7 +79,7 @@ body::before {
 
 .input-group input[type="text"]:focus,
 .input-group input[type="password"]:focus {
-    border-color: #04a8f4;
+    border-color: #d02e2e;
     /* Màu viền khi focus */
 }
 
@@ -99,7 +99,7 @@ body::before {
 .remember-me input[type="checkbox"] {
     margin-right: 10px;
     /* Khoảng cách giữa checkbox và label */
-    accent-color: #30cc05;
+    accent-color: white;
     /* Đổi màu checkbox (chỉ hỗ trợ trên một số trình duyệt) */
     width: 16px;
     /* Kích thước checkbox */
@@ -131,7 +131,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background-color: #9df309;
+    background-color: #0924f3;
 }
 
 .signup-link {
@@ -141,7 +141,7 @@ button[type="submit"]:hover {
 }
 
 .signup-link a {
-    color: #007bff;
+    color: #ff0000;
     /* Màu xanh cho liên kết đăng ký */
     text-decoration: none;
     font-weight: bold;
@@ -149,5 +149,5 @@ button[type="submit"]:hover {
 }
 
 .signup-link a:hover {
-    color: #f70d0d;
+    color: #1d02ec;
 }
